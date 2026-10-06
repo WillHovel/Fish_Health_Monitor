@@ -1,0 +1,7 @@
+default: aquatic_biomonitor_fw
+build_dir: C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build
+domains:
+  - name: aquatic_biomonitor_fw
+    build_dir: C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/aquatic_biomonitor_fw
+flash_order:
+  - aquatic_biomonitor_fw

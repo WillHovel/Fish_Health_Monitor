@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/CMakeFiles/aquatic_biomonitor_fw"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/CMakeFiles/aquatic_biomonitor_fw.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/CMakeFiles/aquatic_biomonitor_fw-complete.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-build.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-configure.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-download.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-install.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-patch.rule"
+		},
+		{
+			"file" : "C:/Users/willh/Desktop/Fish_monitor/aquatic_biomonitor_fw/build/_sysbuild/sysbuild/images/aquatic_biomonitor_fw-prefix/src/aquatic_biomonitor_fw-stamp/aquatic_biomonitor_fw-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"aquatic_biomonitor_fw"
+		],
+		"name" : "aquatic_biomonitor_fw"
+	}
+}

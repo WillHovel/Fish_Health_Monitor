@@ -1,0 +1,56 @@
+/ {
+zephyr,user {
+    io-channels = <&adc 0>;
+    sdn-gpios = <&gpio0 13 GPIO_ACTIVE_HIGH>;
+};
+
+leds {
+    compatible = "gpio-leds";
+    led_status: led_0 {
+        gpios = <&gpio0 6 GPIO_ACTIVE_HIGH>;
+        label = "STATUS_LED";
+    };
+};
+
+aliases {
+    led-status = &led_status;
+};
+};
+
+&adc {
+status = "okay";
+#address-cells = <1>;
+#size-cells = <0>;
+
+channel@0 {
+    reg = <0>;
+    zephyr,gain = "ADC_GAIN_1_6";
+    zephyr,reference = "ADC_REF_INTERNAL";
+    zephyr,acquisition-time = <ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 40)>;
+    zephyr,input-positive = <NRF_SAADC_AIN0>;
+    zephyr,resolution = <12>;
+    zephyr,oversampling = <4>;
+};
+};
+
+/*
+ * NVS storage partition — top 32 kB of the nRF52840's 1 MB internal flash.
+ * This is not defined in the base Zephyr nrf52840dk DTS for plain Zephyr builds
+ * (NCS adds it via mcuboot; we define it manually here).
+ *
+ * Layout:
+ *   0x00000000 - 0x000F7FFF  Application (~992 kB)
+ *   0x000F8000 - 0x000FFFFF  NVS storage  ( 32 kB, 8 x 4096-byte pages)
+ */
+&flash0 {
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
+
+        storage_partition: partition@f8000 {
+            label = "storage";
+            reg = <0x000f8000 0x00008000>;
+        };
+    };
+};
